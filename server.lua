@@ -8,6 +8,7 @@ AddEventHandler('imago_case:dajecikurwopierwsze', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local quantity = xPlayer.getInventoryItem('case').count
     if quantity > 0 then
+	xPlayer.removeInventoryItem('case', 1)
         xPlayer.addInventoryItem('pistol', 1)
         TriggerClientEvent('esx:showNotification', source, "Dostales 1 pistolet ze skrzynki!")
     else
@@ -20,6 +21,7 @@ AddEventHandler('imago_case:dajecikurwodrugie', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local quantity = xPlayer.getInventoryItem('case').count
     if quantity > 0 then
+	xPlayer.removeInventoryItem('case', 1)
         xPlayer.addInventoryItem("vintagepistol", 2)
         TriggerClientEvent('esx:showNotification', source, "Dostales 2 vintage ze skrzynki!")
     else
@@ -32,6 +34,7 @@ AddEventHandler('imago_case:dajecikurwotrzecie', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local quantity = xPlayer.getInventoryItem('case').count
     if quantity > 0 then
+	xPlayer.removeInventoryItem('case', 1)
         xPlayer.addInventoryItem("snspistol_mk2", 2)
         TriggerClientEvent('esx:showNotification', source, "Dostales 2 snsmk2 ze skrzynki!")
     else
@@ -44,6 +47,7 @@ AddEventHandler('imago_case:dajecikurwoczwartee', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local quantity = xPlayer.getInventoryItem('case').count
     if quantity > 0 then
+	xPlayer.removeInventoryItem('case', 1)
         xPlayer.addInventoryItem("snspistol_mk2", 1)
         TriggerClientEvent('esx:showNotification', source, "Dostales 1 snsmk2 ze skrzynki!")
     else 
@@ -56,6 +60,7 @@ AddEventHandler('imago_case:dajecikurwopiate', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local quantity = xPlayer.getInventoryItem('case').count
     if quantity > 0 then
+	xPlayer.removeInventoryItem('case', 1)
         xPlayer.addInventoryItem("snspistol_mk2", 5)
         xPlayer.addInventoryItem("vintagepistol", 5)
         xPlayer.addInventoryItem("pistol_ammo", 100)
@@ -70,6 +75,7 @@ AddEventHandler('imago_case:dajecikurwoszuste', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local quantity = xPlayer.getInventoryItem('case').count
     if quantity > 0 then
+	xPlayer.removeInventoryItem('case', 1)
         xPlayer.addInventoryItem("vintagepistol", 1)
         xPlayer.removeInventoryItem('case', 1)
         TriggerClientEvent('esx:showNotification', source, "Dostales jednego vintage ze skrzynki!")
