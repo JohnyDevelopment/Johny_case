@@ -1,0 +1,1 @@
+INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('case', 'Skrzynka', '1000000', '0', '1')
